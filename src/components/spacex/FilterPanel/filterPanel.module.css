@@ -1,0 +1,22 @@
+@media (min-width: 1024px) {
+  .filterPanelContainer {
+    background-color: white;
+    border-radius: 6px;
+    padding: 8px 8px 44px;
+  }
+  .buttonContainer {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 45px;
+    justify-content: center;
+  }
+  .header {
+    border-bottom: 2px solid lightgray;
+    margin: 16px 22px;
+    padding-bottom: 8px;
+  }
+  h3 {
+    margin: 0;
+    text-align: left;
+  }
+}

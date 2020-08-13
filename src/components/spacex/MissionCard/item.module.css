@@ -1,0 +1,42 @@
+/* Mobile */
+
+/* Tablet */
+@media (min-width: 700px) {
+  .container {
+    background-color: red;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .container {
+    background-color: white;
+    min-height: 150px;
+    border: 1px solid #e7edee;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 21%;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    padding: 14px;
+  }
+  .imageContainer {
+    height: 225px;
+    width: 100%;
+  }
+  img {
+    height: 100%;
+    width: 99%;
+  }
+  .itemDetails {
+    text-align: left;
+  }
+  h4 {
+    margin: 8px 0;
+  }
+}
+
+/* mobile - 700 
+    tablet- 700 -1024
+    desktop- 1024 -1440
+*/

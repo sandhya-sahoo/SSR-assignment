@@ -1,0 +1,23 @@
+@media (min-width: 700px) {
+  .containerRow {
+    display: flex;
+  }
+  .filterPanel {
+    flex-basis: 22%;
+    background-color: #e7edee;
+    border-radius: 6px;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 16px;
+    justify-content: space-around;
+  }
+  /* .column {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 23%;
+    } */
+}
