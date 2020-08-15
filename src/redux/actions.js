@@ -6,6 +6,7 @@ export const getItems = () => {
         dispatch({
           type: "GET-DATA",
           payload: data,
+          isFetching: false
         });
       })
       .catch((err) => {
@@ -17,6 +18,7 @@ export const getItems = () => {
       });
   };
 };
+//launch_success=true&amp;land_success=true&amp;launch_year=2014
 export const getAllFilteredItem = (lunch, landing, year) => {
   let url = `https://api.spacexdata.com/v3/launches?limit=96`;
   if (lunch) {
@@ -26,7 +28,7 @@ export const getAllFilteredItem = (lunch, landing, year) => {
     url += `&land_success=${landing}`;
   }
   if (year !== "") {
-    url += `&lunch_year=${year}`;
+    url += `&launch_year=${year}`;
   }
 
   return (dispatch) => {

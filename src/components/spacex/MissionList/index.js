@@ -15,11 +15,13 @@ class MissionList extends React.Component {
   render() {
     return (
       <div className="containerRow">
-        {this.props.product && this.props.product.length && (
+        {this.props.product && this.props.product.length ? (
           <div className="filterPanel">
             <FilterPanel data={this.props.product} />
           </div>
-        )}
+        )
+        : (null)
+      }
         <div className="row">
           {this.props.product && this.props.product.length ? (
             this.props.product.map((item, index) => {
@@ -38,8 +40,7 @@ class MissionList extends React.Component {
 const mapStateToProps = (state) => {
   return {
     product: state.product,
-    message: state.message,
-    isFetching: state.isFetching,
+    message: state.message
   };
 };
 const mapDispatchToProps = (dispatch) => {
